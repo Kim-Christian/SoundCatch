@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="50dp"
+    android:clipToPadding="true"
+    android:background="@color/dark_black_semi_transparent"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <ImageView
+        android:id="@+id/hideShow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/expand_more"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="title"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/hideShow"
+        android:layout_toStartOf="@+id/delete"/>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/delete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/play"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_above="@+id/play"
+        android:layout_toEndOf="@+id/time"
+        android:layout_toStartOf="@+id/length"
+        android:id="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="50dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/play"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="50dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/play"
+        android:gravity="center"/>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/graphCard"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/hideShow"
+        android:layout_above="@id/seekBar"/>
+</RelativeLayout>

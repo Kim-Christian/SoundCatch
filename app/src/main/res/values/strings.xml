@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SoundCatch</string>
+    <!--<string name="rec_folder">Recordings</string>
+    <string name="rec_file">recording</string>-->
+    <string name="project">Project</string>
+    <string name="projects">Projects</string>
+    <string name="recording">Recording</string>
+    <string name="recordings">Recordings</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/pitch"
+        android:title="pitch"
+        android:icon="@drawable/record" />
+    <item android:id="@+id/projects"
+        android:title="projects"
+        android:icon="@drawable/pause" />
+    <item android:id="@+id/recordings"
+        android:title="recordings"
+        android:icon="@drawable/record" />
+</menu>
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_search"
+        android:title="@string/menu_search"
+        android:icon="@drawable/ic_search" />
+    <item android:id="@+id/action_settings"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/ic_add" />
+    <item android:id="@+id/action_navigation"
+        android:title="@string/menu_navigation"
+        android:icon="@drawable/ic_action_navigation_menu" />
+</menu>-->

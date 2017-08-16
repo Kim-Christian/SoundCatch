@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.soundcatch.soundcatch.MainActivity">
+
+    <View
+        android:id="@+id/leftDragLayer"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/right_to_left_gradient"
+        android:layout_gravity="start"/>
+    <View
+        android:id="@+id/rightDragLayer"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/left_to_right_gradient"
+        android:layout_gravity="end"/>
+    <View
+        android:id="@+id/bottomDragLayer"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/top_to_bottom_gradient"
+        android:layout_gravity="bottom"/>
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_title_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/recFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/record"
+        android:layout_gravity="bottom|end"
+        app:elevation="8dp"
+        app:backgroundTint="@color/colorPrimary"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:clickable="true"
+        android:src="@drawable/add"
+        android:layout_gravity="top|end"
+        app:elevation="8dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_anchor="@id/recFAB"
+        app:layout_anchorGravity="top"/>
+</android.support.design.widget.CoordinatorLayout>
