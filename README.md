@@ -2,7 +2,7 @@
 Med SoundCatch kan du spela in, spara ljudfiler och spela upp dem samt skapa mappar som inspelningarna placeras i. Denna app förenklar exempelvis skapande av musik genom att du snabbt kan spela in idéer till din musik och samla dessa i olika projekt.
 
 # Credits
-I used android-floating-action-button by Jerzy Chalupski as a part of the development.
+I used <a href="https://github.com/futuresimple/android-floating-action-button">android-floating-action-button</a> by <a href="https://github.com/chalup">Jerzy Chalupski</a> as a part of the development.
 
 # License
 Copyright (C) 2017 Kim-Christian Lindberg
